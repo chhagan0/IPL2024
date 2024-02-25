@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1003983371421",
+    "project_id": "ipllivescoreandschedule2024",
+    "storage_bucket": "ipllivescoreandschedule2024.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1003983371421:android:6b714c9e5b90f5e94ce874",
+        "android_client_info": {
+          "package_name": "com.cxzcodes.ipllivescoreandschedule2024"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAA7g0HxCeAjBq4GjKb1zFEFt8-7A8mbZY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

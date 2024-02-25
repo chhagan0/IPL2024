@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+   android:background="@color/bg_color"
+    android:layout_height="match_parent"
+    tools:context=".Teamsactivity">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_45sdp"
+    android:background="@color/main_color"
+    android:id="@+id/rv1"
+    android:orientation="horizontal">
+    <ImageView
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/ivbtnback"
+        android:src="@drawable/baseline_arrow_back_24"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Teams"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="15dp"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+</LinearLayout>
+<androidx.recyclerview.widget.RecyclerView
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    tools:listitem="@layout/item_teams"
+    android:layout_below="@id/rv1"
+    android:layout_above="@id/adView"
+    android:layout_centerHorizontal="true"
+    android:id="@+id/rvteams"/>
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="5dp"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111">
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>

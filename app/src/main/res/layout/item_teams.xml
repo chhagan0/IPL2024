@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/_140sdp"
+    android:layout_height="@dimen/_130sdp"
+    android:layout_margin="@dimen/_5sdp"
+     app:cardCornerRadius="@dimen/_10sdp"
+     app:strokeWidth="0.5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/ivteamlogo"
+            android:layout_width="@dimen/_100sdp"
+             android:layout_height="@dimen/_100sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@id/tvteamname"
+            android:layout_centerInParent="true"
+              android:src="@drawable/ipllogo" />
+
+        <TextView
+            android:id="@+id/tvteamname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            android:text="Team Name"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="2dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</com.google.android.material.card.MaterialCardView>
